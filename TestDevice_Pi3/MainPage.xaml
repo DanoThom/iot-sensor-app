@@ -10,7 +10,7 @@
 
     <Grid>
         <Button x:Name="btnRun" Content="Refresh" Margin="575,319,0,0" VerticalAlignment="Top" Click="BtnRun_OnClick" IsEnabled="False"/>
-        <TextBox x:Name="txtFeedback" HorizontalAlignment="Left" Margin="330,315,0,0" Text="TextBox" VerticalAlignment="Top" Height="40" Width="215" IsReadOnly="True" PlaceholderText="Temperature..."/>
+        <TextBox x:Name="txtFeedback" HorizontalAlignment="Left" Margin="145,315,0,0" Text="Click Refresh to read Temperate" VerticalAlignment="Top" Height="40" Width="400" IsReadOnly="True" PlaceholderText="Temperature..." IsEnabled="False"/>
 
     </Grid>
 </Page>

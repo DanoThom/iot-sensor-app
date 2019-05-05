@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 
 namespace IoT.Hub
 {
-    public static class IoTHubController
+    public static class IoTHub
     {
         private static DeviceClient _deviceClient;
         private static string DeviceId = "test002";
@@ -14,7 +14,7 @@ namespace IoT.Hub
 
         public static async Task ConnectToHub()
         {
-            _deviceClient = DeviceClient.CreateFromConnectionString(Conn);
+            _deviceClient = DeviceClient.CreateFromConnectionString(Conn, TransportType.Amqp_WebSocket_Only);
             await Task.CompletedTask;
         }
 
